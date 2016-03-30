@@ -25,6 +25,8 @@ SECRET_KEY = 'dj@&shp=vi2jh9m3&ef)oke0%7hpd%5(h*_0u2t^+v4k0=+qa5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEMPLATE_DEBUG = True
+
 ALLOWED_HOSTS = []
 
 
@@ -110,14 +112,14 @@ STATICFILES_DIRS = (
 )
 
 
-TEMPLATE_DIRS = (
+TEMPLATE_DIRS = [
     BASE_DIR + '/templates/'
-)
+]
 
-TEMPLATE_LOADERS = (
+TEMPLATE_LOADERS = [
     'django.template.loaders.filesystem.loader',
     'django.template.loaders.app_directories.Loader',
-)
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/

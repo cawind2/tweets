@@ -5,7 +5,9 @@ from django.views.generic import View
 
 class Index(View):
     def get(self, request):
-        return HttpResponse('I am called from a get Request')
+        params ={}
+        params["name"] = 'Django'
+        return render(request, 'base.html', params)
 
     def post(self,):
         return HttpResponse('I am called from a post request')
