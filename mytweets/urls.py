@@ -21,10 +21,10 @@ from mytest.views import Index
 
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns['',
                        url(r'^$', Index.as_view()),
                        url(r'^admin/', admin.site.urls),
-                       )
+                       ]
 # urlpatterns = patterns('',
 #                        url(r'^$', views.index, name='index'),
 #                        url(r'^admin/', admin.site.urls),
